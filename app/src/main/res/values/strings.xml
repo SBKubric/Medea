@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MedeaApp</string>
+    <string name="image_description">Cat and doctor</string>
+    <string name="title">Medea</string>
+    <string name="subtitle">Full-service Veterinary Clinic</string>
+    <string name="default_icon_description">icon</string>
+    <string name="phone_number">+7 (495) 733-01-29</string>
+    <string name="number_description">Phone</string>
+    <string name="call_button">Call</string>
+    <string name="curriculum">14:00 - 19:30\n20:00 - 13:30</string>
+    <string name="curriculum_description">Curriculum</string>
+    <string name="location_first_line">Chobotovskaya Street, 17/1</string>
+    <string name="location_second_line">Novo-Peredelkino, Moscow</string>
+    <string name="geo_button">View</string>
+    <string name="web_button">View</string>
+    <string name="website">www.medeyavet.ru</string>
+    <string name="website_description">Website</string>
+    <string name="phone_number_global">+74957330129</string>
+</resources>

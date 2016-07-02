@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="image_description">Кот и Доктор</string>
+    <string name="title">Медея</string>
+    <string name="subtitle">Круглосуточная ветклиника</string>
+    <string name="default_icon_description">Иконка</string>
+    <string name="number_description">Наш телефон</string>
+    <string name="call_button">Позвонить</string>
+    <string name="curriculum_description">Часы работы</string>
+    <string name="location_first_line">Чоботовская улица, дом 17/1</string>
+    <string name="location_second_line">Ново-Переделкино, Москва</string>
+    <string name="website_description">Наш сайт</string>
+    <string name="geo_button">На карте</string>
+    <string name="web_button">Перейти</string>
+</resources>

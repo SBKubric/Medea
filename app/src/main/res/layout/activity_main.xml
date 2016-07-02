@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sbkubric.android.medeaclinic.MainActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:contentDescription="@string/image_description"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cat" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingLeft="64dp"
+        android:paddingRight="64dp"
+        android:background="#03A9F4"
+        android:text="@string/title"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/subtitle_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:paddingLeft="64dp"
+        android:paddingRight="64dp"
+        android:background="#03A9F4"
+        android:text="@string/subtitle"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+
+    <RelativeLayout style="@style/element_relative_layout_bottom_list">
+
+        <ImageView
+            android:id="@+id/phone_icon_imageview"
+            style="@style/icon_bottom_list"
+            android:contentDescription="@string/default_icon_description"
+            android:src="@drawable/ic_call_black_24dp" />
+
+        <LinearLayout
+            android:id="@+id/number_linear_layout"
+            style="@style/text_linear_layout_bottom_list"
+            android:layout_toEndOf="@id/phone_icon_imageview"
+            android:layout_toRightOf="@id/phone_icon_imageview">
+
+            <TextView
+                android:id="@+id/number_textview"
+                style="@style/body2_text_bottom_list"
+                android:text="@string/phone_number" />
+
+            <TextView
+                android:id="@+id/number_description_textview"
+                style="@style/body_text_bottom_list"
+                android:text="@string/number_description" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/call_button"
+            style="@style/button_bottom_list"
+            android:text="@string/call_button"
+            android:onClick="makeACall"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/element_relative_layout_bottom_list">
+
+        <ImageView
+            android:id="@+id/stop_icon_imageview"
+            style="@style/icon_bottom_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/default_icon_description"
+            android:src="@drawable/ic_access_time_black_24dp" />
+
+        <LinearLayout
+            style="@style/text_linear_layout_bottom_list"
+            android:layout_toEndOf="@id/stop_icon_imageview"
+            android:layout_toRightOf="@id/stop_icon_imageview">
+
+            <TextView
+                android:id="@+id/brake_curriculum_textview"
+                style="@style/body2_text_bottom_list"
+                android:text="@string/curriculum" />
+
+            <TextView
+                android:id="@+id/brake_description_textview"
+                style="@style/body_text_bottom_list"
+                android:text="@string/curriculum_description" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/element_relative_layout_bottom_list">
+
+        <ImageView
+            android:id="@+id/geo_icon_imageview"
+            style="@style/icon_bottom_list"
+            android:contentDescription="@string/default_icon_description"
+            android:src="@drawable/ic_place_black_24dp" />
+
+        <LinearLayout
+            android:id="@+id/location_linear_layout"
+            style="@style/text_linear_layout_bottom_list"
+            android:layout_toEndOf="@id/geo_icon_imageview"
+            android:layout_toRightOf="@id/geo_icon_imageview">
+
+            <TextView
+                android:id="@+id/address_textview"
+                style="@style/body2_text_bottom_list"
+                android:text="@string/location_first_line" />
+
+            <TextView
+                android:id="@+id/address_extra_textview"
+                style="@style/body_text_bottom_list"
+                android:text="@string/location_second_line" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/geo_button"
+            style="@style/button_bottom_list"
+            android:text="@string/geo_button"
+            android:onClick="viewOnMap"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/website_view"
+        style="@style/element_relative_layout_bottom_list">
+
+        <ImageView
+            android:id="@+id/web_icon_imageview"
+            style="@style/icon_bottom_list"
+            android:contentDescription="@string/default_icon_description"
+            android:src="@drawable/ic_public_black_24dp" />
+
+        <LinearLayout
+            android:id="@+id/website_linear_layout"
+            style="@style/text_linear_layout_bottom_list"
+            android:layout_toEndOf="@id/web_icon_imageview"
+            android:layout_toRightOf="@id/web_icon_imageview">
+
+            <TextView
+                android:id="@+id/website_textview"
+                style="@style/body2_text_bottom_list"
+                android:text="@string/website" />
+
+            <TextView
+                android:id="@+id/website_description_textview"
+                style="@style/body_text_bottom_list"
+                android:text="@string/website_description" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/web_button"
+            style="@style/button_bottom_list"
+            android:text="@string/web_button"
+            android:onClick="viewTheWebsite"/>
+    </RelativeLayout>
+</LinearLayout>
